@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIホーム整理 - サポート</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --color-bg: #f7f5f2;
+      --color-surface: #ffffff;
+      --color-text: #1f2320;
+      --color-text-muted: #5b6460;
+      --color-accent: #2f6f4f;
+      --color-border: #e3ded6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+    }
+    header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.25rem 1.5rem;
+    }
+    header .brand {
+      max-width: 720px;
+      margin: 0 auto;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    nav {
+      max-width: 720px;
+      margin: 0.5rem auto 0;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    nav a { color: var(--color-accent); text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+    }
+    .lead {
+      color: var(--color-text-muted);
+      margin-bottom: 2rem;
+    }
+    details {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 0.9rem 1.25rem;
+      margin-bottom: 0.9rem;
+    }
+    summary {
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "Q";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: var(--color-accent);
+      color: #fff;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+    details p {
+      margin: 0.75rem 0 0.25rem 2rem;
+      color: var(--color-text);
+    }
+    .contact {
+      background: #eef5ee;
+      border: 1px solid #cfe3d0;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 2rem;
+    }
+    .contact h2 { margin-top: 0; font-size: 1.05rem; color: var(--color-accent); }
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      color: var(--color-text-muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--color-accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AIホーム整理 (AI Home Organizer)</div>
+    <nav>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="index.html">サポート</a>
+    </nav>
+  </header>
+  <main>
+    <h1>サポート</h1>
+    <p class="lead">よくあるご質問をまとめています。解決しない場合は、ページ下部の連絡先までお問い合わせください。</p>
+
+    <details>
+      <summary>スクリーンショットを解析できません</summary>
+      <p>
+        通信環境が不安定な場合や、画像サイズが極端に大きい場合に解析が失敗することがあります。
+        Wi-Fiまたは安定した回線に接続のうえ、再度お試しください。
+        解析に繰り返し失敗する場合は、アプリ内の「手動追加」機能でアプリを直接登録することもできます。
+      </p>
+    </details>
+
+    <details>
+      <summary>認識結果（アプリ名・ジャンル）が実際と違います</summary>
+      <p>
+        AIによる自動認識は完璧ではなく、アイコンのデザインや画質によって誤認識が発生することがあります。
+        結果画面の編集機能から、アプリ名の修正・ジャンルの変更・不要な項目の削除が行えます。
+        認識精度に不安がある場合は、アイコンが大きく写るスクリーンショットのご利用をおすすめします。
+      </p>
+    </details>
+
+    <details>
+      <summary>ジャンルカードをタップしてもアプリが起動しません</summary>
+      <p>
+        本アプリはURL Scheme（アプリ間連携用のリンク形式）を使ってアプリを起動します。
+        対象のアプリが端末にインストールされていない場合や、そのアプリがURL Schemeに対応していない場合は起動できず、代わりにApp Store（またはGoogle Play）の検索画面が開きます。
+        アプリが端末にインストール済みであることをご確認ください。
+      </p>
+    </details>
+
+    <details>
+      <summary>ショートカットの書き出しをしても、ショートカットが自動で追加されません</summary>
+      <p>
+        iOS 15以降では、セキュリティ上の理由により未署名のショートカットを自動でインポートすることができません。
+        本アプリの書き出し機能は、手順ガイドと起動用URL一覧のコピー、およびShortcutsアプリを開く導線を提供するものです。
+        コピーした内容をもとに、Shortcutsアプリ内でショートカットを作成してください。
+      </p>
+    </details>
+
+    <details>
+      <summary>Proの購入を復元する方法を教えてください</summary>
+      <p>
+        設定画面の「購入を復元」ボタンをタップしてください。購入時と同じApple ID（またはGoogleアカウント）でサインインしていれば、Pro機能が復元されます。
+        復元できない場合は、購入時のApple ID / Googleアカウントが現在ログイン中のものと一致しているかご確認ください。
+      </p>
+    </details>
+
+    <details>
+      <summary>解析回数に制限はありますか</summary>
+      <p>
+        無料版は月1回・1枚までの解析が可能です（毎月リセットされます）。
+        Pro版（買い切り）では解析回数の制限がなくなり、1回の解析で最大5枚のスクリーンショットをまとめて処理できます。
+      </p>
+    </details>
+
+    <details>
+      <summary>ジャンルはカスタマイズできますか</summary>
+      <p>
+        無料版ではデフォルトの8ジャンル（仕事・SNS・エンタメ・ゲーム・金融・AI・ツール・買い物・カメラ・写真）のみ利用できます。
+        Pro版では独自のジャンルを自由に追加できます。
+      </p>
+    </details>
+
+    <details>
+      <summary>アップロードしたスクリーンショットはどこかに保存されますか</summary>
+      <p>
+        解析のためClaude APIへ一時送信されますが、解析目的のみに利用され、処理完了後に破棄されます。運営者のサーバーに画像が保存されることはありません。
+        画像はユーザーの端末内にのみローカルに保存されます。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご確認ください。
+      </p>
+    </details>
+
+    <div class="contact">
+      <h2>解決しない場合</h2>
+      <p>
+        上記でも解決しない場合は、下記の連絡先まで、発生している症状・端末機種・OSバージョンを添えてご連絡ください。<br />
+        運営: Burning Tribe<br />
+        連絡先メールアドレス: <a href="mailto:burningtribe.apps@gmail.com">burningtribe.apps@gmail.com</a>
+      </p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 Burning Tribe. All rights reserved. /
+    <a href="privacy.html">プライバシーポリシー</a> ・
+    <a href="terms.html">利用規約</a>
+  </footer>
+</body>
+</html>
